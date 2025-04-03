@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            font-size: 1.1em;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            table {
+                border: 0;
+            }
+            thead {
+                display: none;
+            }
+            tr {
+                display: block;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+            }
+            td {
+                display: block;
+                text-align: right;
+                font-size: 14px;
+                padding: 10px;
+                border: 1px solid #ddd;
+            }
+            td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #007bff;
+            }
+            td:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>My Projects</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Vector Art</td>
+            <td>Adobe Photoshop</td>
+            <td><a href="vector1.html">View</a></td>
+        </tr>
+        <tr>
+            <td>Vector Art</td>
+            <td>Adobe Photoshop</td>
+            <td><a href="vector2.html">View</a></td>
+        </tr>
+        <tr>
+            <td>Portfolio Website</td>
+            <td>HTML and CSS</td>
+            <td><a href="c:\Users\rodel\Desktop\Rodel Martinez\Finals Kay Maam Girlie\porfolio.html">View</a></td>
+        </tr>
+        <tr>
+            <td>Flowchart</td>
+            <td>Draw.io</td>
+            <td><a href="c:\Users\rodel\Desktop\Rodel Martinez\MARTINEZRODEL.html">View</a></td>
+        </tr>
+        <tr>
+            <td>Recreational Activity</td>
+            <td>HTML , CSS and JS</td>
+            <td><a href="c:\Users\rodel\Desktop\Rodel Martinez\Rodel-Christian-O.-MARTINEZ.pdf">View</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Back Button -->
+<a href="my portfolio.html" class="back-button">Back</a>
+
+</body>
+</html>

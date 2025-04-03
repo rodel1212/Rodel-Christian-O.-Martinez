@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        video.background-video {
+            position: fixed;
+            top: 1;
+            left: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            background-color: rgba(108, 99, 255, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(108, 99, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .additional-pictures {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .additional-pictures img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .additional-pictures img:hover {
+            transform: scale(1.1);
+        }
+
+        .content h2 {
+            text-align: center;
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .back-button a {
+            background: #6c63ff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .back-button a:hover {
+            background: #574fcc;
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="" type="video/mp4">
+        
+    </video>
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <div class="content">
+        <img src="c:\Users\rodel\Desktop\Finals Kay Maam Girlie\shaun4.jpg" alt="Profile Picture">
+        <h2>Shaun Custodio</h2>
+        <p>
+            Hello! I am 
+        </p>
+        <div class="additional-pictures">
+            <img src="c:\Users\rodel\Desktop\Finals Kay Maam Girlie\shaun3.jpg" alt="Picture 1">
+            <img src="c:\Users\rodel\Desktop\Finals Kay Maam Girlie\shaun1.jpg" alt="Picture 2">
+            <img src="c:\Users\rodel\Desktop\Finals Kay Maam Girlie\shaun2.jpg" alt="Picture 3">
+        </div>
+    </div>
+    <div class="back-button">
+        <a href="c:\Users\rodel\Desktop\Finals Kay Maam Girlie\porfolio.html">Back to Portfolio</a>
+    </div>
+</body>
+</html>
